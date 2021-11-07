@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+body{
+    background-color: hsl(185, 75%, 39%);
+    margin:0;
+    padding:0;
+    background-image: url(./images/bg-pattern-top.svg),  url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 900px, 900px;
+    background-position: -250px -300px, 620px 470px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.bg{
+    width: 900px;
+    height: 900px;
+    position: fixed;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card{
+    box-shadow: 0px 20px 30px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5% 5% 5% 5%;    
+    width: 350px;
+    background-color: initial;
+    align-items: center;
+}
+
+/* upper image */
+.background{
+    position: relative;
+    border-radius: 5% 5% 0 0 ;
+    margin: auto;
+    width: 100%;
+}
+.photoprofile{
+    z-index: 3;
+    position: absolute;
+    border-radius: 50% ;
+    border: 5px solid white;
+    height: 96px;
+    margin: 95px;
+}
+
+/* profile detail */
+.profile-detail{
+    position: relative;
+    top:auto;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    border-radius: 0 0 5% 5%;
+    font-size: 18px;
+}
+/* upper text */
+.upper-text{
+    padding-top: 50px;
+}
+.upper-text p{
+    color: hsl(227, 10%, 46%);
+}
+h2{
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+}
+h2.age{
+    color: hsl(227, 10%, 46%);
+    font-weight: lighter;
+    margin-left: 0.5rem;
+}
+p.loc{
+    display: block;
+    font-size: 15px;
+    font-size: 1rem;
+    margin: 5px;
+    padding-bottom: 0.5rem;
+}
+/* bottom table */
+.bottom-table{
+    padding-bottom: 1.2rem;
+}
+table{
+    margin: auto;
+    width: 85%;
+    align-items: center;
+    text-align: center;
+}
+
+.stats{
+    font-weight: bold;
+    
+}
+
+.sub-stats{
+    color: hsl(227, 10%, 46%);
+    font-size: small;
+}
+
+/* attribution */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    color: white;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px){
+    body{
+        background-size: 540px, 540px;
+        background-position:-320px -240px, 120px 540px;
+    }
+    .card{
+        width: 90%;
+    }
+    .photoprofile{
+        margin: 84px;
+    }
+}
