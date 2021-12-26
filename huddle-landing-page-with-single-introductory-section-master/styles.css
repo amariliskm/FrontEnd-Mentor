@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+html{
+    height: 100%;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 3em 3em 4em 5em;
+}
+#logo{
+    width: 15%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+#mockup{
+    padding-top: 4.5em;
+}
+.desc{
+    margin: 3em 5em 0 5em;
+}
+h1{
+    font-family: 'Poppins';
+    margin-right: 2em;
+}
+p{
+    font-family: 'Open Sans';
+    margin: 1.5em 0;
+}
+
+button{
+    background-color: whitesmoke;
+    text-align: center;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 1em 5em;
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: 'Open Sans';
+    margin: 2em 0;
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: whitesmoke;
+}
+.contact{
+    display: flex;
+    position: absolute;
+    right: 7em;
+}
+.socmed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 2rem;
+    height: 2rem;  
+    font-size: 1.5em;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.socmed:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1.5px solid hsl(300, 69%, 71%);
+}
+
+#footer
+footer{
+    clear: left;
+    bottom: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    padding-top: 2em;
+    text-align: center; 
+}
+.attribution a {
+    color: yellow;
+    text-decoration: none;
+}
+
+@media only screen and (max-width : 600px){
+    body{
+        padding: 1em;
+        align-items: center;
+        background-image: url(images/bg-mobile.svg);
+        background-size: cover;
+    }
+    #logo{
+        padding: 1em 0 0 1em;
+        width: 30%;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #mockup{
+        width: 90%;
+    }
+    .desc{
+        text-align: center;
+        margin: 2em;
+    }
+    button{
+        margin: 0;
+    }
+    h1{
+        margin-right: 0;
+    }
+    .contact{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        right: 0;
+    }
+}
+
+     
