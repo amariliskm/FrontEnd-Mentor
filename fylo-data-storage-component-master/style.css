@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+body{
+    /* background-color: hsl(229, 57%, 11%); */
+    background: hsl(229, 57%, 11%) url(images/bg-desktop.png) no-repeat bottom;
+    /* background-repeat: no-repeat; */
+    /* background-position: bottom; */
+    background-size: 100vw 50vh;
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+}
+.first-box{
+    background-color: hsl(228, 56%, 26%);
+    margin: 0 2rem;
+    padding: 2em 7em 2em 2em;
+    border-radius: 20px 100px 20px 20px;
+}
+
+.logo{
+    height: 2.5em;
+}
+.icon{
+    background-color: hsl(229, 57%, 11%);
+    padding: 1em;
+    margin-top: 2em;
+    margin-right: 0.5em;
+    height: 1.25em;
+    border-radius: 10px;
+}
+.second-box{
+    background-color: hsl(228, 56%, 26%);
+    width: 40%;
+    position: relative;
+    border-radius: 10px;
+    padding: 1em 2em;
+    height: 8rem;
+    margin-top: 2rem;
+}
+span{
+  font-weight: bold;
+}
+.leftover{
+  background-color: white;
+  color: black;
+  position: absolute;
+  padding: 1em;
+  bottom: 8rem;
+  right: 2em;
+  border-radius: 10px;
+}
+
+.leftover > h1{
+  display: inline;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+.leftover > span{
+  color: lightslategray;
+  font-weight: bold;
+  position: relative;
+  bottom: 0.5rem;
+  padding-right: 1rem;
+}
+.leftover::after{
+  content: "";
+  border-width: calc(20em/14);
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+}
+
+/* meter */
+.meter-slide{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 1.5rem;
+}
+meter{
+  width: 99%;
+  height: 2.5rem;
+  display: block;
+  position: relative;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+}
+meter::-webkit-meter-bar{
+  background-color: #151e49;
+  border: 2px solid #151e49;
+}
+meter::after {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 34%;
+  right: 19%;
+}
+/*  */
+
+.num-range{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    bottom: 2em;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color:gold;
+}
+
+/* phone size*/
+@media only screen and (max-width : 1000px){
+  body{
+    background:url(images/bg-mobile.png) no-repeat bottom;
+    background-size: cover;
+    background-position: unset;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-box{
+    padding: 2rem;
+    width: 70%;
+  }
+  .second-box{
+    height: 10rem;
+    width: unset;
+    width: 70%;
+  }
+  .leftover{
+    position: inherit;
+    width: 50%;
+    left: 20%;
+    height: 3rem;
+    bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftover > h1{
+    position: relative;
+    left: 5%;
+  }
+  .leftover > span{
+    left: 10%;
+    bottom: unset;
+  }
+  .leftover::after{
+    content: unset;
+  }
+}
