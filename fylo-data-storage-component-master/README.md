@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github Repo](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/amariliskm/FrontEnd-Mentor/tree/main/fylo-data-storage-component-master)
+- Live Site URL: [live site URL](https://amariliskm.github.io/FrontEnd-Mentor/fylo-data-storage-component-master/index.html)
 
 ## My process
 
