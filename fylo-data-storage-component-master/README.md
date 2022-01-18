@@ -48,7 +48,7 @@ Users should be able to:
 ### What I learned
 
 1. i learned abaout meter in html, at first i thought it was input slider range. but its weird to use slider for leftover GB with range that can slide.
-2. i learn to make chat shape with content =""; in css. xD
+2. i learn to make chat shape with content =""; and set to unset when in phone screen to remove it in css.
 3. and i just found out that we must selecting the weight font that we want in google font before apply it.
 
 ### Useful resources
